@@ -1,0 +1,13 @@
+{
+  "host": "127.0.0.1",
+  "port": 8001,
+  "database": "data/local-app.sqlite3",
+  "institution": "BMSIT",
+  "institutions": ["BMSIT", "VTU"],
+  "forecast": {"method": "global_frequency_v1", "top_k": 5, "seed": 1729},
+  "max_upload_bytes": 40000000,
+  "assessment_types": {"internal": "Internal assessment", "semester_end": "Semester-end exam"},
+  "session_hours": 12,
+  "auth_requests_per_minute": 15,
+  "max_dataset_bytes": 10000000
+}

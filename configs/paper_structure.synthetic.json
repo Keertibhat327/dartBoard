@@ -1,0 +1,12 @@
+{
+  "status": "UNVERIFIED",
+  "is_synthetic": true,
+  "description": "Synthetic toy structure only; no VTU pattern or marks are asserted.",
+  "modules": ["DEMO-A", "DEMO-B"],
+  "slots": [
+    {"number": "1", "sub_part": "a", "module": "DEMO-A", "marks": 3},
+    {"number": "1", "sub_part": "b", "module": "DEMO-A", "marks": 7},
+    {"number": "2", "sub_part": "a", "module": "DEMO-B", "marks": 4},
+    {"number": "2", "sub_part": "b", "module": "DEMO-B", "marks": 6}
+  ]
+}

@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "seer-exam"
+version = "0.1.0"
+description = "CPU-only exam preparation research scaffold; synthetic data only at M0"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest==8.4.2", "ruff==0.16.6"]
+app = ["fastapi==0.143.0", "starlette==0.52.1", "anyio==4.12.1", "uvicorn==0.52.4", "httpx==0.28.1"]
+
+[tool.setuptools.packages.find]
+include = ["forecast*", "labeling*", "topicmap*", "retrieval*", "planner*", "api*", "scripts*"]
+exclude = ["tests*", "web*", "data*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra --strict-markers"
+filterwarnings = ["error"]
+
+[tool.ruff]
+target-version = "py311"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+

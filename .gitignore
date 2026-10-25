@@ -1,0 +1,16 @@
+data/
+models/
+artifacts/
+.env
+__pycache__/
+.pytest_cache/
+node_modules/
+.venv/
+.ruff_cache/
+.mypy_cache/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.coverage
+htmlcov/

@@ -1,0 +1,19 @@
+{
+  "is_synthetic": true,
+  "seed": 1729,
+  "years": [2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025],
+  "sittings": ["SYNTHETIC-MAIN"],
+  "subjects": [
+    {"id": "SYN-ALPHA", "name": "Synthetic Systems"},
+    {"id": "SYN-BETA", "name": "Synthetic Signals"}
+  ],
+  "scheme": {"id": "SYN-SCHEME", "name": "Synthetic scheme (not VTU)", "year": 2000},
+  "paper_structure": "paper_structure.synthetic.json",
+  "topics_per_module": 6,
+  "preferred_topics_per_module": 2,
+  "scenarios": {
+    "strong_repeat": {"preferred_probability": 1.0},
+    "weak_repeat": {"preferred_probability": 0.2},
+    "pure_noise": {"preferred_probability": 0.0}
+  }
+}
